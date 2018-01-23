@@ -1,5 +1,5 @@
 let binary = (first,second) => {	
-	if(typeof(first)==='number' && typeof(second)==='number')
+	if(typeof(first)==='number' && isFinite(first) && typeof(second)==='number' && isFinite(second))
 	{
 		return first+second;
 	}
