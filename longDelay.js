@@ -1,7 +1,9 @@
 let total = 0;
 function longDelay(arg) {
 	if (arg === undefined) {
-		return total;
+		let res = total;
+		total=0;
+		return res;
         
 	} else {
 		total += arg;
