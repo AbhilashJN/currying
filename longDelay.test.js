@@ -12,3 +12,9 @@ test('Test for invocation with 1 then 2 then 3 then no arguments , should return
 		expect(longDelay(1)()).toBe(1);
 	});
 }
+
+{
+	test('Test for invocation with no arguments , should return sum=0' , ()=>{
+		expect(longDelay()).toBe(0);
+	});
+}
