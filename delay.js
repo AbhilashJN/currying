@@ -1,7 +1,15 @@
-function delay(arg1)
+function delay(first)
 {
 
-	return (arg2)=>{return arg1+arg2;};
+	return (second)=>{
+		if(typeof(first)==='number' && isFinite(first) && typeof(second)==='number' && isFinite(second))
+		{
+			return first+second;
+		}
+		else{
+			return null;
+		}
+	};
 
 }
 
