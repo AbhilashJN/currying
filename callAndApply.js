@@ -4,7 +4,8 @@ var callAndApply = {
 		return object;
 	},
 	applier: function (object, method, argumentsArr) {
-		// your code
+		method.apply(object,argumentsArr);
+		return object;
 	}
 };
 module.exports = callAndApply;
